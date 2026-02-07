@@ -1,86 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ANAGTA</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-    }
-
-    body {
-      background: #0b0b0b;
-      color: #eaeaea;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container {
-      text-align: center;
-      max-width: 700px;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: 48px;
-      letter-spacing: 6px;
-      font-weight: 300;
-      margin-bottom: 20px;
-    }
-
-    .line {
-      width: 80px;
-      height: 1px;
-      background: #888;
-      margin: 20px auto;
-    }
-
-    p {
-      font-size: 16px;
-      color: #b5b5b5;
-      line-height: 1.6;
-      margin-bottom: 40px;
-    }
-
-    .tag {
-      font-size: 14px;
-      letter-spacing: 2px;
-      color: #888;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
-      text-align: center;
-      font-size: 12px;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAGTA - Designing the Future into Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #0A0A0A;
+            color: #E5E5E5;
+            overflow-x: hidden;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        .logo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .tagline {
+            font-size: 24px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .about {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .collection {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 50px 20px;
+        }
+        .artifact {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .artifact:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #0A0A0A;
+        }
+        .newsletter {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="tag">DESIGN • OBJECTS • LIGHT</div>
-    <h1>ANAGTA</h1>
-    <div class="line"></div>
-    <p>
-      A design studio exploring form, material, and atmosphere.  
-      Crafted objects and lighting pieces shaped by silence, shadow, and precision.
-    </p>
-    <p style="letter-spacing:2px; color:#777;">LAUNCHING SOON</p>
-  </div>
-
-  <footer>
-    © 2026 ANAGTA
-  </footer>
+    <header>
+        <nav>
+            <div class="logo">ANAGTA</div>
+            <a href="#shop">Shop</a>
+            <a href="#archive">Archive</a>
+            <a href="#story">Story</a>
+            <a href="#search">Search</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1 class="tagline">Designing the Future into Form</h1>
+    </section>
+    <section class="about" id="about">
+        <h2>The Manifest</h2>
+        <p>Exploring the Sanskrit origin "Anāgat" - Where the future becomes tangible.</p>
+    </section>
+    <section class="collection" id="collection">
+        <h2>The Artifacts</h2>
+        <div class="artifact">Artifact 1</div>
+        <div class="artifact">Artifact 2</div>
+        <div class="artifact">Artifact 3</div>
+        <div class="artifact">Artifact 4</div>
+    </section>
+    <footer>
+        <div class="newsletter">Subscribe to The ANAGTA Registry</div>
+        <div>Social Links</div>
+    </footer>
 </body>
 </html>
